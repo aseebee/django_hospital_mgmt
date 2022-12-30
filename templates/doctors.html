@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% block title %}
+doctors{% endblock title %}
+
+
+{% block content %}
+
+
+
+
+
+<div style="background-image:url('https://img.freepik.com/free-photo/blurred-abstract-background-interior-view-looking-out-toward-empty-office-lobby-entrance-doors-glass-curtain-wall-with-frame_1339-6363.jpg');
+
+height:600px;
+background-repeat:no-repeat;
+background-size: cover">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container text-center mt-0">
+
+    {%for d in doctors%}
+
+   
+    
+    <div class=" card text-center mx=3 my-3" style="width: 13rem; display:inline-block">
+
+
+
+        
+        <img src="{{d.doc_image.url}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Dr.{{d.doc_name}}</h5>
+          <p class="card-text">{{d.doc_spec}}</p>
+          <h6>{{d.dep_name}}</h6>
+
+    
+        </div>
+      </div>
+   
+    {%endfor%}
+
+  </div> 
+
+
+
+
+</div>
+{% endblock content %}

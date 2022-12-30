@@ -1,0 +1,37 @@
+
+{% extends 'base.html' %}
+
+
+
+{% block title %}
+department{% endblock title %}
+
+
+
+{% block content %}<h1 class="text-center">Our Departments</h1>
+
+
+{% for d in dept %}
+
+
+<div class ="bg-secondary     mx-auto w-50 bg-secondory text-center border text-black p-2 my-5 border-primary rounded float-md-left">
+
+
+<h1>{{d.dep_name}}</h1>
+<p>{{d.dep_description}}</p>
+
+</div>
+<style>
+    .boom{
+        color: blue;
+   
+        text-align: center
+        padding: 0.5em;
+        border-radius: 2px;
+    }
+</style>
+
+{%endfor%}
+
+
+{% endblock content %}

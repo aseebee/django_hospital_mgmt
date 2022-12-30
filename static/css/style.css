@@ -1,0 +1,20 @@
+li:hover{
+    background-color: rgb(46, 46, 215);
+    border-radius:50px;
+    transition: 1.2s;
+    border: 1px solid blue;
+}
+h3{
+    color: antiquewhite;
+}
+h4{
+    color: blue;
+}
+.background-image{
+    background-image: url(./img7.jpg);
+    height: 200px;
+    width: 200px;
+}
+
+
+
